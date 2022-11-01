@@ -1,0 +1,225 @@
+/* FONT SIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98  */
+
+/* SPACING SYSTEM (px): 
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  */
+
+/****************************/
+/* BELOW 1344px (SMALLER desktops)*/
+/****************************/
+@media (max-width: 84em) {
+  .lista-works {
+    column-gap: 25px;
+  }
+}
+
+/**************************************/
+/* BELOW 1200px (Landscape Tablets)*/
+/**************************************/
+
+@media (max-width: 75em) {
+  .lista-works {
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 12px;
+    column-gap: 12px;
+    padding-top: 48px;
+  }
+
+  .img-work {
+    width: 300px;
+  }
+}
+
+/**************************************/
+/* BELOW 944px (Tablets)*/
+/**************************************/
+
+@media (max-width: 59em) {
+  .lista-works {
+    grid-template-columns: 220px 220px 220px;
+    column-gap: 25px;
+    padding-top: 48px;
+  }
+
+  .img-work {
+    width: 220px;
+  }
+
+  .lista-habilidades {
+    grid-template-columns: 220px 220px 220px;
+    row-gap: 6px;
+    column-gap: 12px;
+    padding-top: 48px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    margin-left: 100px;
+  }
+  .profile {
+    width: 300px;
+  }
+}
+
+/**************************************/
+/* BELOW 704px (Smaller Tablets)*/
+/**************************************/
+
+@media (max-width: 44em) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 620px;
+  }
+
+  .profile {
+    width: 388px;
+  }
+
+  .image-profile {
+    padding-top: 10px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 0px;
+    color: #1e0e62;
+    padding-top: 48px;
+  }
+
+  .text {
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 0px;
+    line-height: 26px;
+    color: rgba(21, 20, 57, 0.4);
+  }
+
+  .description {
+    align-items: center;
+  }
+
+  .title-habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 60px;
+    color: #1e0e62;
+    padding-top: 30px;
+  }
+
+  .lista-habilidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 12px;
+    margin-bottom: 28px;
+  }
+
+  .img-work {
+    width: 100%;
+  }
+
+  .lista-works {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 64px;
+    justify-self: center;
+    justify-items: center;
+    padding-top: 48px;
+  }
+
+  .text-hab {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(21, 20, 57, 0.4);
+  }
+
+  .work-list {
+    width: 80%;
+  }
+
+  .title-works {
+    font-size: 28px;
+  }
+
+  .container {
+    height: 450px;
+  }
+
+  .title-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    /* line-height: 6px; */
+    color: #1e0e62;
+    padding-top: 40px;
+  }
+
+  .padding-top {
+    padding-top: 0px;
+    color: rgba(21, 20, 57, 0.4);
+  }
+  .lista-media {
+    padding-top: 18px;
+  }
+
+  .icon-media {
+    font-size: 32px;
+    color: rgba(21, 20, 57, 0.4);
+  }
+}
+
+/**************************************/
+/* BELOW 544px (Phones)*/
+/**************************************/
+
+@media (max-width: 34em) {
+  .header {
+    padding-inline: 30px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 520px;
+  }
+
+  .title {
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+    line-height: 36px;
+    padding-top: 48px;
+  }
+  .profile {
+    width: 312px;
+  }
+
+  .image-profile {
+    padding-top: 10px;
+  }
+
+  .text {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: 0;
+    color: rgba(21, 20, 57, 0.4);
+    width: 80%;
+    text-align: center;
+  }
+}
